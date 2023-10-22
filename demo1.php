@@ -1,0 +1,29 @@
+<?php
+error_reporting(0);
+
+$msg = "";
+$cname = $_POST['cname'];
+$desc = $_POST['description'];
+// If upload button is clicked ...
+if (isset($_POST['upload'])) {
+
+    $filename = $_FILES["uploadfile"]["name"];
+    $tempname = $_FILES["uploadfile"]["tmp_name"];
+    $folder = "./image/" . $filename;
+
+    $db = mysqli_connect("localhost", "root", "", "atmayog");
+
+    // Get all the submitted data from the form
+    $sql = "INSERT INTO courses (course_image,course_name,course_description) VALUES ('$filename','$cname','$desc')";
+
+    // Execute query
+    mysqli_query($db, $sql);
+
+    // Now let's move the uploaded image into the folder: image
+    if (move_uploaded_file($tempname, $folder)) {
+        echo "<h3> Image uploaded successfully!</h3>";
+    } else {
+        echo "<h3> Failed to upload image!</h3>";
+    }
+}
+?>

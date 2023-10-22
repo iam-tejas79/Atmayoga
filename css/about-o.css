@@ -1,0 +1,26 @@
+.parallax3 {
+  background: rgb(255, 171, 0);
+  background: linear-gradient(
+    93deg,
+    rgba(255, 171, 0, 1) 0%,
+    rgba(255, 171, 0, 0.35898109243697474) 28%,
+    rgba(255, 171, 0, 1) 48%,
+    rgba(255, 171, 0, 0.30015756302521013) 70%,
+    rgba(255, 171, 0, 1) 100%
+  );
+}
+.parallax3 p {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(9, 5, 0, 0.56);
+}
+.parallax3 h1 {
+  font-size: 70px;
+  font-weight: 900;
+  color: black;
+}
+.about-description {
+  color: rgb(132, 132, 132);
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}

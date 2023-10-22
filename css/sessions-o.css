@@ -1,0 +1,28 @@
+.sessions-heading-one {
+  font-size: calc(3.375rem + 1.5vw);
+  font-weight: 600;
+}
+.sessions-heading-two {
+  color: rgb(149, 149, 149);
+}
+.session-description {
+  color: rgb(132, 132, 132);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.img-title {
+  background-color: rgba(0, 0, 0, 0.523);
+  color: white;
+  padding: 7px 10px;
+}
+.main {
+  width: 90% !important;
+  height: 250px;
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}

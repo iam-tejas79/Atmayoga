@@ -1,0 +1,449 @@
+:root {
+  --orange: rgb(255, 128, 0);
+  --bg-one: #dcf1ff;
+  --primary: rgb(86, 210, 255);
+  --light-orange: rgb(243, 212, 181);
+}
+.bg-blue {
+  background-color: aliceblue;
+}
+body,
+html {
+  height: 100%;
+}
+.text-theme {
+  color: var(--orange);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.btn-one {
+  background-color: var(--light-orange);
+  padding: 5px;
+  font-weight: 500;
+}
+.btn-one:hover {
+  background-color: black;
+  color: white;
+}
+.btn-two {
+  background-color: var(--primary);
+  padding: 2px;
+  color: white;
+  font-weight: 500;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/*--------------------------------------------index-----------------------------------------------*/
+
+#index .initial-image img {
+  width: 400px;
+}
+.title {
+  font-family: "Genos", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: var(--orange);
+}
+#index .quote {
+  font-family: "Genos", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.new {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid orange; */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: 0.15em; */
+  animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+/* The typewriter cursor effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.main-heading-1 {
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+.main-heading-2 {
+  font-size: 35px;
+  font-weight: bolder;
+  font-family: "Genos", sans-serif;
+}
+.main-p-1 {
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+.lotus-pink {
+  width: 100px;
+  background-color: #0000006e;
+  border-radius: 8px;
+}
+/* .review-yourself {
+  background-color: #f1f1f1;
+} */
+/*--------------------------------------------login-----------------------------------------------*/
+#login {
+  /* background-color: var(--bg-one); */
+  /* background-color: rgb(22, 22, 27); */
+  /* overflow: hidden; */
+  /* background: rgb(255, 171, 0);
+  background: linear-gradient(
+    93deg,
+    rgba(255, 171, 0, 0.639093137254902) 22%,
+    rgba(255, 171, 0, 0) 71%
+  ); */
+  background-image: url(../assets/yoga-back.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+.rotating {
+  border-radius: 10px;
+  background-color: rgb(0 147 206 / 25%);
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0px;
+  }
+}
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.out-div {
+  height: 550px;
+  background-color: white;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 425px) {
+  .out-div {
+    height: 800px;
+  }
+  .rotating {
+    height: 513px;
+  }
+  .footer-div {
+    margin-top: 153px !important;
+  }
+  .parallax3 h1 {
+    font-size: 47px;
+  }
+}
+.title-login {
+  font-family: "Genos", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--orange);
+}
+.login-heading {
+  font-family: "Rampart One", cursive;
+  text-shadow: 2px 2px #0ca6ff;
+  color: black;
+}
+/* style-navbar-outer */
+.navbar {
+  background-color: rgba(230, 255, 250, 0.883);
+}
+.navbar-brand {
+  /* background-color: #0ca6ff14; */
+  padding-right: 10px;
+  border: 1px solid #00000030;
+}
+.navbar-outer .nav-image {
+  width: 80px;
+  height: 60px;
+}
+.navbar-outer li a {
+  font-size: 20px;
+  font-weight: 500;
+}
+.navbar-outer {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #d6faff;
+  border: 2px solid #141414;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.navbar-nav .nav-link {
+  color: black !important;
+  /* font-family: "Genos", sans-serif; */
+}
+.nav-link:hover {
+  color: black !important;
+}
+.login-btn {
+  font-weight: 700;
+}
+.login-btn:hover {
+  background-color: #141414;
+  color: white;
+}
+.parallax-2,
+.review-yourself {
+  background-image: url(./parallax.jpg);
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ---------------------------------------------------------sessions-------------------------------------- */
+.session-image {
+  width: 200px;
+  height: 200px;
+}
+.session-div {
+  background-color: rgb(213, 238, 255);
+  border-radius: 8px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+.session-div:hover img {
+  transform: scale(1.3);
+  transition: 300ms ease-in-out;
+}
+.session-div:hover {
+  box-shadow: 4px 8px 8px rgb(213, 238, 255);
+  background-color: rgb(255, 255, 255);
+  transition: 300ms ease-in-out;
+}
+.read {
+  left: 0;
+  top: 0;
+  border: none;
+  background-color: #f55d5d;
+  padding: 5px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  display: none;
+}
+.session-div:hover .read {
+  display: block;
+}
+.read:hover {
+  color: rgb(255, 255, 255);
+}
+/* ---------------------------------------------------------namaste-------------------------------------- */
+/* @media only screen and (max-width: 500px) {
+  .namaste {
+    display: none;
+  }
+} */
+.namaste {
+  background-color: #ffceff;
+  min-height: 300px;
+  position: relative;
+}
+.left-circle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+}
+.right-circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+}
+@media only screen and (max-width: 768px) {
+  .right-circle,
+  .left-circle {
+    width: 100px;
+  }
+}
+.parallax {
+  /* background: url("/assets/chakra.png") !important; */
+  background-image: url(./parallax.jpg);
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax h3 {
+  color: white;
+  z-index: 99;
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+  display: inherit;
+  align-self: center;
+  /* color: white; */
+}
+.parallax h3:hover {
+  color: #ffffff;
+  font-weight: 900;
+  transition: 300ms ease-in-out;
+}
+.overlaySlider {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  /* background: url("/parallax.jpg"); */
+
+  overflow: hidden;
+  width: 100%;
+  opacity: 0.5;
+  height: 100%;
+  transition: 0.5s ease;
+}
+/* -----------------------footer-outer-------------------- */
+.footer-div {
+  background-color: #2a1a26;
+  color: white;
+}
+.footer-div a {
+  color: white;
+}
+.footer-div a:hover {
+  color: rgb(113, 188, 250);
+  text-decoration: underline;
+  transition: 200ms ease-in-out;
+}
+/* owl carousel */
+.owl-item {
+  width: 128.906px;
+  color: white;
+  margin-right: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  background: transparent;
+}
+.owl-dots {
+  display: none;
+}
+.owl-item h4 {
+  font-family: "Genos", sans-serif;
+  font-size: 27px;
+}
+.owl-nav button span {
+  font-size: 32px;
+  color: white;
+  font-weight: 900;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #86979100;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* -----------back to top button--------------- */
+#myBtn {
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  background-color: rgba(165, 231, 255, 0.327);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #70b8fb;
+}
+.logout {
+  text-decoration: none;
+  color: black;
+}
+.logout:hover {
+  color: rgb(255, 255, 255);
+}
+
+.sidebar-a,
+.sidebar-a:hover {
+  text-decoration: none;
+  color: black;
+}
+.li-a:hover {
+  background-color: #0ca6ff;
+  color: #141414;
+}
+.small-logo {
+  height: 82px !important;
+}
+.admin-photo {
+  height: 140px;
+}
+.admin-sessions {
+  /* width: 150px; */
+  border-radius: 5px;
+}
+.owl-carousel .owl-item .developer {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 5px;
+}
+.section-2 {
+  background-color: #e3f9f9;
+}
+.manage-courses h5 {
+  background-color: #141414;
+}
+.outer {
+  background-color: aliceblue;
+}
+.account-img {
+  width: 150px;
+}
